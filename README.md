@@ -41,12 +41,12 @@
 Загрузка .csv файла на сервер.
 
 **Запрос:**
-```json
+```text
 file: File.csv (multipart/form-data)
 ```
 **Ответ:**
 ```json
-{"message": <str>}
+{"message": "<str>"}
 ```
 
 ##### POST /preprocess_data
@@ -54,11 +54,11 @@ file: File.csv (multipart/form-data)
 
 **Запрос:**
 ```json
-{"filename": <str>}
+{"filename": "<str>"}
 ```
 **Ответ:**
 ```json
-{"message": <str>}
+{"message": "<str>"}
 ```
 
 ##### GET /list_models
@@ -66,7 +66,7 @@ file: File.csv (multipart/form-data)
 
 **Ответ:**
 ```json
-{"models": [str, str, ...]}
+{"models": ["str", "str", "..."]}
 ```
 
 ##### POST /select_model
@@ -74,11 +74,11 @@ file: File.csv (multipart/form-data)
 
 **Запрос:**
 ```json
-{"model": <str>}
+{"model": "<str>"}
 ```
 **Ответ:**
 ```json
-{"message": str}
+{"message": "<str>"}
 ```
 
 ##### GET /predict
@@ -86,10 +86,10 @@ file: File.csv (multipart/form-data)
 
 **Запрос:**
 ```json
-{"filename": <str>, "model": <str>}
+{"filename": "<str>", "model": "<str>"}
 ```
 **Ответ:**
-```json
+```text
 file: File.csv (multipart/form-data)
 ```
 
