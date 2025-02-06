@@ -1,0 +1,7 @@
+services:
+  data_processor:
+    build:
+      context: .
+      dockerfile: ./bigdata.Dockerfile
+    volumes:
+      - /home/c2/BIG_DATA:/home/c2/BIG_DATA
